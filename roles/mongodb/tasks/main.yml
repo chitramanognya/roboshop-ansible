@@ -1,6 +1,6 @@
-- name: Setup MongoDB repofile
+- name: Setup MongoDB YUM repofile
   ansible.builtin.copy:
-    src: mongodb.repofile
+    src: mongodb.repo
     dest: /etc/yum.repos.d/mongo.repo
 
 - name: Install MongoDB
