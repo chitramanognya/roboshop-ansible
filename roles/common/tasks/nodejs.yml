@@ -12,10 +12,10 @@
     
 - name: Install NodeJS Dependencies
   community.general.npm:
-    path: /app   
+    path: /app
     
-#- name: Schema Setup
-#  ansible.builtin.import_tasks:
- # 
-    
-    
+- name: Schema Setup
+  ansible.builtin.import_tasks:
+    file: schema-setup.yml
+  when: schema_type is defined
+  
