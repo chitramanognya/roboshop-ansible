@@ -1,4 +1,7 @@
-- name: Load NodeJS
+- name: Setup Hostname
+  ansible.builtin.shell: set-hostname {{ component }}
+  
+- name: Install Exporter
   ansible.builtin.import_role:
-    name: common
-    tasks_from: nodejs
+    name: prometheus
+    tasks_from: exporter
