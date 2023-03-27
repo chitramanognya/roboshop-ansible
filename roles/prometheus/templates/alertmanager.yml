@@ -7,8 +7,8 @@ route:
 recievers:
   - name: "email"
     email_configs:
-      - to: "${To_MAIL_ADDRESS}"
-        from: "${FROM_EMAIL_ADDRESS}"
+      - to: chmanu.chinu@gmail.com
+        from: chmanu.chinu@gmail.com
         smarthost: "email-smtp.us-east-1.amazonaws.com:587"
         auth_username: "${{SES_SMTP_USERNAME}}"
         auth_password: "${{SES_SMTP_PASSWORD}}"
