@@ -3,7 +3,7 @@
     file: server.yml
   when: prometheus_server    
   
-- name: node exporter
+- name: Node Exporter
   ansible.builtin.import_tasks:
     file: exporter.yml
   when: node_exporter
