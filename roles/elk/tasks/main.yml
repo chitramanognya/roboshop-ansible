@@ -2,4 +2,3 @@
   when: elk
   ansible.builtin.import_tasks:
     file: logstash.yml
-    
