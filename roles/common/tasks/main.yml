@@ -9,6 +9,6 @@
   
 - name: Install Filebeat
   ansible.builtin.import_role:
-  name: elk
-  tasks_from: filebeat
+    name: elk
+    tasks_from: filebeat
   
