@@ -14,6 +14,7 @@
   
     - name: Load Schema
       ansible.builtin.shell: mongo --host mongodb-dev.learndevopsb71shop.site </app/schema/{{component}}.js
+      
   
 - name: MySQL Schema
   when: schema_type == "mysql"
