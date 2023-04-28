@@ -1,4 +1,4 @@
 component: catalogue
 schema_type: mongo
-filebeat: true
+filebeat: false
 node_exporter: true
