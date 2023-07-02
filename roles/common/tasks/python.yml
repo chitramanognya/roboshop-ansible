@@ -13,7 +13,7 @@
 - name: Install Python Dependencies
   ansible.builtin.pip:
     requirements: /app/requirements.txt
-    executable: pip3.9
+    executable: pip3.6
  
 - name: Schema Setup
   ansible.builtin.import_tasks:
